@@ -4,6 +4,7 @@ import 'package:redux/redux.dart';
 import 'package:github_flutter/common/redux/gsy_redux.dart';
 import 'package:github_flutter/common/style/GsyColors.dart';
 import 'package:flare_flutter/flare_actor.dart';
+import 'package:github_flutter/common/dao/user_dao.dart';
 
 class WelcomePage extends StatefulWidget {
 
@@ -25,7 +26,7 @@ class _WelcomePageState extends State<WelcomePage> {
     
     Store<GSYState> store = StoreProvider.of(context);
     Future.delayed(Duration(seconds: 2, milliseconds: 500), () {
-
+      UserDao.getUserInfoLocal()
     });
   }
   

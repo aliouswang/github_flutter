@@ -1,5 +1,7 @@
 import 'package:json_annotation/json_annotation.dart';
 
+part 'User.g.dart';
+
 @JsonSerializable()
 class User {
   User(
@@ -80,4 +82,8 @@ class User {
   bool two_factor_authentication;
 
   User.empty();
+
+  factory User.fromJson(Map<String, dynamic> json) => _$UserFromJson(json);
+
+  Map<String, dynamic> toJson() => _$UserToJson(this);
 }
