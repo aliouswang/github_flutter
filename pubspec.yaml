@@ -19,6 +19,11 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
+  json_annotation: ^3.0.0
+  flutter_redux: ^0.5.3
+  flare_flutter: ^1.6.2
+  shared_preferences: ^0.5.4
+
 
 dev_dependencies:
   flutter_test:
@@ -66,3 +71,11 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.io/custom-fonts/#from-packages
+
+  assets:
+    - static/images/logo.png
+    - static/images/welcome.png
+    - static/images/default_img.png
+    - static/file/flare_flutter_logo_.flr
+    - static/file/loading_world_now.flr
+    - static/file/Space-Demo.flr
